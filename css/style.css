@@ -1,0 +1,106 @@
+body
+{
+    background-color:rgb(210, 208, 208);
+    padding: 15px;
+}
+
+.nav-item a:hover
+{
+    font-weight: bolder;
+    transform: scale(1.01,1.01);
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+.img-poster
+{
+    border-style: solid;
+    border-color: black;
+    margin-left: 10px;
+    width: 350px !important;
+    height: 350px !important;
+    border-radius: 50px;
+}
+.carousel-control-prev-icon
+{
+    border-radius: 100%;
+    color: rgb(153, 154, 231);
+    background-color: rgb(153, 154, 231);
+}
+.carousel-control-next-icon
+{
+    border-radius: 100%;
+    color: rgb(153, 154, 231);
+    background-color: rgb(153, 154, 231);
+}
+.carousel-indicators button
+{
+    border-radius: 100% !important;
+    width: 15px !important;
+    height: 15px !important;
+    color: rgb(153, 138, 241) !important;
+    background-color: rgb(153, 154, 231) !important;
+}
+.albums
+{
+    text-decoration: none !important; 
+    text-align: center !important;
+    color: aliceblue !important;
+    filter: grayscale(30%);
+    transition: transform 0.4s;
+}
+.albums:hover
+{
+    transform: scale(1.05,1.05) !important;
+    filter: grayscale(0%);
+}
+
+.background-gradient
+
+{
+    background-image: linear-gradient(to right top, #ececec, #e0e0e0, #d4d4d4, #c8c8c8, #bcbcbc, #adadad, #9f9f9f, #919191, #7d7d7d, #6a6a6a, #575757, #454545);
+
+}
+.shadow-xxl
+{
+    -webkit-box-shadow: -3px 20px 67px 4px rgba(0,0,0,0.84);
+    -moz-box-shadow: -3px 20px 67px 4px rgba(0,0,0,0.84);
+    box-shadow: -3px 20px 67px 4px rgba(0,0,0,0.84);
+}
+.card-glass
+{
+    background: rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.add-border:hover
+{
+    cursor: pointer;
+    transform: scale(1.01,1.01);
+    border-style: solid;
+    border-color: #454545 ;
+    font-weight: bolder;
+    color: whitesmoke;
+    background: rgba( 0, 0, 0, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.play-pause
+{
+    font-size: 25px;
+}
+.hover-heart
+{
+    color: red;
+    font-size: 25px;
+}
+.hover-play
+{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
