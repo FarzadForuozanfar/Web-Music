@@ -6,6 +6,7 @@
 
     $album = $db->query("SELECT * FROM albums WHERE id = $album_id")->fetch_assoc();
     $tracks = $db->query("SELECT * FROM `music` WHERE album_id = $album_id");
+    $tracks_assoc = $tracks->fetch_all();
 ?>
 
 <div class="container-fluid mt-3 rounded-4 bg-light card-glass">
@@ -22,12 +23,19 @@
         
     </div>
     <div class="row card-glass pe-2 pb-2">
-        <div class="pt-2 my-3 mb-5">
-            <button class="btn btn-warning rounded-circle mx-5 mt-2"><i class="bi bi-play" style="font-size:20px;"></i></button>
-            <button type="button" class="btn btn-outline-dark mt-2 mx-4">Follow</button>
+        <div class="pt-2 my-3 mb-5 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <button onclick="PlayMusic('<?php echo $tracks_assoc[0][4]; ?>');" class="btn btn-warning rounded-circle mx-5 "><i class="bi bi-play" style="font-size:20px;"></i></button>
+            <button type="button" class="btn btn-outline-dark mx-4">Follow</button>
+            
         </div>
-        <?php foreach ($tracks as $i => $track): ?>
-            <div class="row add-border mx-1 py-1 py-3">
+        <div class="mt-3 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-2">
+            <h3 id="music-name"></h3>
+            <audio id="music-player" width="80%" style="width:80% !important;" controls></audio>
+        </div>
+        <?php foreach ($tracks as $i => $track):
+            $url = str_replace('\\','/', $track['mp3']);
+            ?>
+            <div onclick="PlayMusic('<?= $url ?>','<?php echo $track['name'] ?>');" class="row add-border mx-1 py-1 py-3">
                 <div class="col-1 text-center">
                     <?php echo $i+1; ?>
                 </div>
@@ -44,7 +52,17 @@
         <?php endforeach; ?>
     </div>
 </div>
-
+<script>
+    function PlayMusic(path_music,name) 
+    {       
+        music_name = document.getElementById("music-name");
+        music_bar = document.getElementById('music-player');
+        music_bar.setAttribute('src', path_music);
+        music_name.innerHTML = name;
+        console.log(name);
+        music_bar.play();
+    }
+</script>
 <?php
     include "footer.php";
 ?>

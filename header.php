@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,8 +36,21 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="singers.php">Artists</a>
         </li>
+        <?php if(!empty($_SESSION['login_admin'])):?>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.php">Dashboard</a>
+          </li>
+
+          <li class="nav-item mx-5">
+            <a class="nav-link active btn btn-danger text-light" aria-current="page" href="admin_loguot.php">Log out</a>
+          </li>
+
+        <?php endif; ?>
       </ul>
       <form class="d-flex" role="search">
+        <?php if(empty($_SESSION['login_admin'])):?>
+          <a href="login_admin.php" class="btn btn-success mx-4" type="button">Login</a>
+        <?php endif; ?>
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
       </form>
