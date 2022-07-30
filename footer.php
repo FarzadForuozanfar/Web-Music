@@ -1,3 +1,5 @@
+</div>
+</div>
 <footer class="container-fluid rounded-4 bg-light mt-3 text-center p-2 pt-3">
         <p>Copyright (C) <?php echo date("Y"); ?> Farzad Foroozanfar </p>
     </footer>

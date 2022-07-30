@@ -6,9 +6,11 @@
     $albums = $db->query("SELECT * FROM `albums`");
     $musics = $db->query("SELECT * FROM `music`");
 ?>
-<?php if($_SESSION['login_admin'] != null && $_SESSION['login_admin'] == true):?> 
+<?php if(!empty($_SESSION['login_admin'])):?> 
     
-    
+        <h1 class="mb-1">
+            Dashboard
+        </h1>
         <?php include "admin_menu.php"; ?>
         <div class="col-lg-2 my-2 col-md-4 col-sm-4 col-xs-5 bg-danger rounded-4 p-3 bg-opacity-75 me-5">
             <div class="card text-light text-center bg-danger bg-opacity-75">

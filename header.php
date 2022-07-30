@@ -9,6 +9,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Webapp Music">
+    <meta name="keywords" content="html, css, bootstrap5, js, php, sql, database, music, music website, webapp music">
+    <meta name="author" content="farzad foroozanfar">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -28,10 +31,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Musics</a>
+          <a class="nav-link active" aria-current="page" href="musics.php">Musics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">PlayLists</a>
+          <a class="nav-link active" aria-current="page" href="albums.php">Albums</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="singers.php">Artists</a>
