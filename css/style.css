@@ -16,29 +16,29 @@ body
     border-style: solid;
     border-color: black;
     margin-left: 10px;
-    width: 350px !important;
-    height: 350px !important;
+    width: 360px !important;
+    height: 360px !important;
     border-radius: 50px;
 }
 .carousel-control-prev-icon
 {
     border-radius: 100%;
-    color: rgb(153, 154, 231);
-    background-color: rgb(153, 154, 231);
+    color: rgb(169, 169, 169);
+    background-color: rgb(169, 169, 169);
 }
 .carousel-control-next-icon
 {
     border-radius: 100%;
-    color: rgb(153, 154, 231);
-    background-color: rgb(153, 154, 231);
+    color: rgb(169, 169, 169);
+    background-color: rgb(169, 169, 170);
 }
 .carousel-indicators button
 {
     border-radius: 100% !important;
     width: 15px !important;
     height: 15px !important;
-    color: rgb(153, 138, 241) !important;
-    background-color: rgb(153, 154, 231) !important;
+    color: rgb(169, 169, 170) !important;
+    background-color: rgb(169, 169, 170) !important;
 }
 .albums
 {
@@ -49,6 +49,20 @@ body
     transition: transform 0.4s;
 }
 .albums:hover
+{
+    transform: scale(1.05,1.05) !important;
+    filter: grayscale(0%);
+}
+
+.singers
+{
+    text-decoration: none !important; 
+    text-align: center !important;
+    color: aliceblue !important;
+    filter: grayscale(5%);
+    transition: transform 0.4s;
+}
+.singers:hover
 {
     transform: scale(1.05,1.05) !important;
     filter: grayscale(0%);
@@ -78,17 +92,18 @@ body
 .add-border:hover
 {
     cursor: pointer;
-    transform: scale(1.01,1.01);
+    transform: scale(1.06,1.02) !important;
     border-style: solid;
     border-color: #454545 ;
     font-weight: bolder;
-    color: whitesmoke;
+    color: whitesmoke !important;
     background: rgba( 0, 0, 0, 0.6 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: bolder;
 }
 .play-pause
 {
@@ -103,4 +118,27 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 {
     color: rgb(255, 255, 255);
     font-size: 25px;
+}
+.menu-hover:hover
+{
+    font-weight: bolder;
+    text-decoration: dashed;
+    
+}
+.txt-hover
+{
+    text-decoration: none;
+    color: black;
+}
+.txt-hover:hover
+{
+    text-transform:uppercase !important;
+    color:tomato !important;
+    text-decoration: dashed !important;
+    font-weight: bolder;
+}
+.music-list
+{
+    background-color: #919191 !important;
+    color: yellow !important;
 }
