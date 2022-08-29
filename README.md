@@ -1,4 +1,4 @@
-#### <a href="https://faramusic.000webhostapp.com/">faramusic.com</a>
+# <a href="https://faramusic.000webhostapp.com/">faramusic.com</a>
 # HOME 
 ![screencapture-faramusic-000webhostapp-index-php-2022-08-29-13_58_05](https://user-images.githubusercontent.com/91725214/187171010-187e558d-1766-47b6-bfe6-895fe01671e0.png)
 # Albums
