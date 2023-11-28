@@ -106,10 +106,3 @@ INSERT INTO `singers` (`id`, `name`, `image`) VALUES
 (10, 'Shadmehr Aghili', 'img/singers/shadmehr_aghili'),
 (11, 'Bijan Yaar', 'img\\singers\\Bijan-Yaar.jpg'),
 (12, 'Siavash Ghomayshi', 'img\\singers\\siyavash.jpg');
---
--- Database: `wsasanak`
---
-CREATE DATABASE IF NOT EXISTS `wsasanak` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_persian_ci;
-USE `wsasanak`;
-
--- -----------------
